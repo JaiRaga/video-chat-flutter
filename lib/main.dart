@@ -13,10 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Video Call',
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
+      routes: {
+        "/login": (context) => LoginScreen(),
+      },
       home: LoginScreen(),
     );
   }
